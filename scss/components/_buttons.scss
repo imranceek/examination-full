@@ -1,0 +1,9 @@
+.btn{
+    color: $white;
+    border-bottom: 2px solid $green;
+    padding: 1rem 0;
+    transition: 0.3s;
+}
+.btn:hover{
+    color: $green;
+}

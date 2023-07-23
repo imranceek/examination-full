@@ -1,0 +1,137 @@
+.footer {
+    position: relative;
+    margin-top: 13.7rem;
+    background-color: $dark-grey;
+    width: 100%;
+
+}
+.footer__container {
+}
+.footer__top {
+    margin-top: 8.4rem;
+    display: flex;
+    margin-bottom: 9.2rem;
+    justify-content: space-between;
+
+    h2{
+        font-size: $h1-fz;
+        font-weight: 700;
+        line-height: $h1-lh;
+        letter-spacing: -2.5px;
+        margin-bottom: 3.6rem;
+    }
+    p{
+        width: 44.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $grey;
+        line-height: 2.8rem;
+    }
+}
+.footer__bg-circle{
+    position: absolute;
+    top: 33.1rem ;
+    left: -22rem;
+}
+.footer-hr{
+    display: block;
+}
+.footer__input {
+    input{
+        display: block;
+        width: 44.5rem;
+        border: none;
+        background-color: inherit;
+        padding: 0 37.6rem 1.7rem 2.4rem;
+        font-size: 1.6rem;
+        
+        margin-bottom: 3.2rem;
+        border-bottom: 1px solid $grey;
+    }
+}
+.biginput{
+    input{
+        padding: 0 37.4rem 8.1rem 0;
+    }
+}
+.footer__btn {
+    margin-left: 33rem;
+}
+.footer__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 11.8rem;
+    margin-top: 4.7rem;
+}
+.footer__list{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.header__nav {
+    margin-top: 4.7rem;
+    margin-bottom: 9.2rem;
+}
+.hover-icon{
+    display: none;
+}
+.footer__logo {
+    cursor: pointer;
+}
+
+.header__item a:hover{
+    .header-link-img{
+        display: none;
+    }
+
+    .hover-icon{
+        display: block;
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    footer{
+        background-color: $dark-grey;        
+    }
+    .footer__container{
+        width: 100%;
+        max-width: 708px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer__top{
+        display: block;
+        text-align: center;
+        margin-left: 102px;
+    }
+    
+    .footer__nav{
+        max-width: 708px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .footer{
+        background-color: transparent;
+        text-align: center;
+    }
+    .footer-hr{
+        display: none;
+        }
+    .footer__content{
+        margin-bottom: 5rem;
+        h2{
+            margin-left: 8rem;
+        }
+    }
+
+    .footer__nav{
+        display: block;
+        margin-left: 25rem;
+    }
+    .footer__logo{
+        margin-bottom: 2rem;
+    }
+}
